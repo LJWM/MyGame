@@ -51,9 +51,9 @@ public class CarController : MonoBehaviour
     {
         throttle = Input.GetAxis("Vertical");
         steer = Input.GetAxis("Horizontal");
-        l = Input.GetKeyDown(KeyCode.L);
+        l = Input.GetKeyDown(KeyCode.L); //플래쉬,라이트
 
-        //lights
+        
         if (l)
         {
             ToggleHeadlights();

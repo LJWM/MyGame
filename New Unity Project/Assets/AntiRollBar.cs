@@ -35,8 +35,8 @@ public class AntiRollBar : MonoBehaviour
 
         if (groundedR)
         {
-            travelR = (-WheelL.transform.InverseTransformPoint(hit.point).y
-                    - WheelL.radius) / WheelL.suspensionDistance;
+            travelR = (-WheelR.transform.InverseTransformPoint(hit.point).y
+                    - WheelR.radius) / WheelR.suspensionDistance;
         }
 
         var antiRollForce = (travelL - travelR) * AntiRoll;
